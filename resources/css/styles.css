@@ -38,6 +38,8 @@ html {
 a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 /* Nội dung chính */
@@ -55,6 +57,7 @@ a {
 .phone {
     color: rgb(255, 0, 43);
     font-weight: bold;
+    font-size: 25px;
 }
 
 /* Khẩu hiệu */
