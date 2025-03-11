@@ -48,3 +48,8 @@ a{
     font-weight: bold;
     
 }
+#maps{
+    height: 350px;
+    width: 100%;
+    display: none;
+}
