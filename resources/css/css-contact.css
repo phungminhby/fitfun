@@ -1,8 +1,10 @@
 * {
-    padding: 0;
+    padding-left:  2px;
+    padding-right: 2px;
     margin: 0;
     box-sizing: border-box;
 }
+
 
 html {
     font-family: 'Lato', sans-serif;
@@ -11,8 +13,19 @@ html {
     background-color: rgb(56, 56, 56);
     text-rendering: optimizeLegibility;
 }
-.header{
-    display: inline-block;
+.header {
+    position: fixed;  /* Giữ cố định */
+    top: 0;           /* Cố định ở đầu trang */
+    left: 0;
+    width: 100%;      /* Chiếm toàn bộ chiều rộng */
+    background: #222; /* Màu nền */
+    padding: 15px 20px;
+    z-index: 1000;    /* Đảm bảo luôn ở trên cùng */
+}
+
+/* Để tránh nội dung bị che khuất bởi header */
+body {
+    padding-top: 200px; /* Điều chỉnh để không bị che bởi header */
 }
 
 /* Logo */
@@ -59,7 +72,7 @@ a {
 
 /* Số điện thoại */
 .phone {
-    color: rgb(255, 0, 43);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 25px;
 }
@@ -141,4 +154,8 @@ a {
     font-size: 13px;
     color: #ffffff;
     font-weight: bold;
+}
+
+.foter{
+    text-align: center;
 }

@@ -12,9 +12,21 @@ html {
     background-color: rgb(56, 56, 56);
     text-rendering: optimizeLegibility;
 }
-.header{
-    display: inline-block;
+.header {
+    position: fixed;  /* Giữ cố định */
+    top: 0;           /* Cố định ở đầu trang */
+    left: 0;
+    width: 100%;      /* Chiếm toàn bộ chiều rộng */
+    background: #222; /* Màu nền */
+    padding: 15px 20px;
+    z-index: 1000;    /* Đảm bảo luôn ở trên cùng */
 }
+
+/* Để tránh nội dung bị che khuất bởi header */
+body {
+    padding-top: 200px; /* Điều chỉnh để không bị che bởi header */
+}
+
 
 .fitfun {
     /* margin-left: 250px; */
@@ -119,4 +131,8 @@ a {
 
 .sidebar ul li a:hover {
     text-decoration: underline;
+}
+
+.foter{
+    text-align: center;
 }
