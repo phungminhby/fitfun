@@ -65,7 +65,7 @@ body {
 }
 
 .dangki {
-    animation: blink 1s infinite; /* Nhấp nháy mỗi 1 giây */
+    animation: blink 1.5s infinite; /* Nhấp nháy mỗi 1 giây */
     color: red; /* Màu chữ */
     font-weight: bold;
 }
@@ -172,7 +172,7 @@ body {
 .danhMuc {
     list-style: none;
     display: flex; /* Hiển thị các mục trên một dòng */
-    gap: 20px; /* Khoảng cách giữa các mục */
+    gap: 15px; /* Khoảng cách giữa các mục */
 }
 
 .danhMuc li a {
