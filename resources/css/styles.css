@@ -52,11 +52,22 @@ body {
 }
 
 /* Liên kết */
-a {
+.dangki{
     color: white;
-    text-decoration: none;
+    text-decoration:none;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 50px;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.dangki {
+    animation: blink 1s infinite; /* Nhấp nháy mỗi 1 giây */
+    color: red; /* Màu chữ */
+    font-weight: bold;
 }
 
 /* Nội dung chính */
