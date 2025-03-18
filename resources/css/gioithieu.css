@@ -138,9 +138,9 @@ a {
 }
 .imgcontent{
     border-radius: 10px; /* Bo góc ảnh */
+    max-width: 100%; /* Chiều rộng tối đa = 100% khung chứa */
+    height: auto; /* Giữ nguyên tỉ lệ ảnh */
+    display: block; /* Loại bỏ khoảng trống thừa */
+    margin: 0 auto; /* Căn giữa ảnh */
     margin-top: 20px;
-    margin-left: 25px;
-    width: 100vw;  /* Chiều rộng = 100% màn hình */
-    height: 100vh; /* Chiều cao = 100% màn hình */
-    object-fit: cover; /* Cắt ảnh để vừa khít mà không méo */
 }
