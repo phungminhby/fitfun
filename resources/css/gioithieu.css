@@ -136,3 +136,9 @@ a {
 .foter{
     text-align: center;
 }
+.imgcontent{
+    border-radius: 10px; /* Bo góc ảnh */
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 350px;
+}
