@@ -14,24 +14,34 @@ html {
     text-rendering: optimizeLegibility;
 }
 .header {
-    position: fixed;  /* Giữ cố định */
-    top: 0;           /* Cố định ở đầu trang */
+    /* position: fixed;  */
+    top: 75px;           /* Cố định ở đầu trang */
     left: 0;
     width: 100%;      /* Chiếm toàn bộ chiều rộng */
-    background: #222; /* Màu nền */
     padding: 15px 20px;
     z-index: 1000;    /* Đảm bảo luôn ở trên cùng */
+    /* background-color: #ff6600; */
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Để tránh nội dung bị che khuất bởi header */
+.tieude{
+    margin-top: 0px;
+}
 body {
-    padding-top: 200px; /* Điều chỉnh để không bị che bởi header */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
 }
 
 /* Logo */
 .logo1 {
-    width: 120px;
-    margin-left: 10px;
+    width: 100px;
+    /* margin-left: 10px; */
 }
 
 /* Hình ảnh */
@@ -70,13 +80,21 @@ body {
     font-weight: bold;
 }
 
+/* Thiết lập vùng nội dung chính */
+        .container {
+            width: 93%;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
 /* Nội dung chính */
 .content {
     background-color: black;
     padding: 20px;
     max-width: 100%;
     width: 100%;
-    text-align: left;
+    text-align: center;
     word-wrap: break-word; /* Giúp văn bản không bị tràn */
 }
 
@@ -159,28 +177,45 @@ body {
 }
 
 
-.header {
-    display: flex;
-    justify-content: space-between; /* Cách đều hai bên */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    padding: 10px 20px; /* Tạo khoảng cách hai bên */
-    background-color: rgb(56, 56, 56); /* Màu nền nhẹ */
-}
-
-
-
-.danhMuc {
-    list-style: none;
-    display: flex; /* Hiển thị các mục trên một dòng */
-    gap: 15px; /* Khoảng cách giữa các mục */
-}
-
-.danhMuc li a {
-    text-decoration: none;
-    font-size: 13px;
-    color: #ffffff;
+/* Header với tiêu đề và màu nền nổi bật */
+header {
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
     font-weight: bold;
 }
+
+
+/* Thanh điều hướng (menu) */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+/* Hiệu ứng hover cho menu */
+        nav a:hover {
+            background-color: #ff6600;
+        }
+
+/* Khu vực lời chứng thực (testimonial) */
+        .testimonial {
+            color: #000000;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 .foter{
     text-align: center;
 }
